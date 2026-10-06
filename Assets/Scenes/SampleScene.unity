@@ -396,6 +396,9 @@ GameObject:
   - component: {fileID: 613724165}
   - component: {fileID: 613724164}
   - component: {fileID: 613724163}
+  - component: {fileID: 613724168}
+  - component: {fileID: 613724169}
+  - component: {fileID: 613724170}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -523,6 +526,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613724168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613724162}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 412e8348b493e0a44addf016d94700cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelloWorldDebug
+--- !u!114 &613724169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613724162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd04eb0979b5e6468a36db338db62bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyScript
+--- !u!114 &613724170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613724162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3da694959fdc124587e9fda9e1c1325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PushSpaceToDestroy
 --- !u!1 &624599117
 GameObject:
   m_ObjectHideFlags: 0
