@@ -34,5 +34,13 @@ public float rotationSpeed;
            transform.Rotate((-1)*transform.up*rotationSpeed*Time.deltaTime);
         }
 
+      //examples of other movement options
+      
+      //if (Input.GetKey(KeyCode.UpArrow))
+      //{
+      //Transform.Translate(Vector3.forward, Space.World); //Moves the GameObj in a fixed direction of the Global Z
+      //}
+
+
     }
 }
