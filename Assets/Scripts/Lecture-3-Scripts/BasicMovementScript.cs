@@ -11,15 +11,27 @@ public float rotationSpeed;
     void Update()
     {
         //move forward
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
            transform.Translate(transform.forward*movementSpeed*Time.deltaTime,Space.World);
         }
 
         //Move Backwards
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
            transform.Translate((-1)*transform.forward*movementSpeed*Time.deltaTime,Space.World);
+        }
+ 
+         //move Right
+        if (Input.GetKey(KeyCode.D))
+        {
+           transform.Translate(transform.right*movementSpeed*Time.deltaTime,Space.World);
+        }
+
+        //Move Left
+        if (Input.GetKey(KeyCode.A))
+        {
+           transform.Translate((-1)*transform.right*movementSpeed*Time.deltaTime,Space.World);
         }
 
         //Rotate Right
