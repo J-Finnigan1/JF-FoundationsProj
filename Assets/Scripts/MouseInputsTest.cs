@@ -9,6 +9,7 @@ public float rotationSpeed;
     {
         if (Input.GetAxis("Mouse X")<0){
             Debug.Log("Mouse Moving Left");
+        
         }
 
         if (Input.GetAxis("Mouse X")==0){
@@ -17,6 +18,7 @@ public float rotationSpeed;
         
         if (Input.GetAxis("Mouse X")>0){
             Debug.Log("Mouse Moving Right");
+            
         }
     }
 }
