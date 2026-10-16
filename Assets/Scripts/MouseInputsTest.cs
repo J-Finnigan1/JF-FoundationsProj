@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class MouseInputsTest : MonoBehaviour
 {
-    // Update is called once per frame
+public float rotationSpeed;
+
     void Update()
     {
         if (Input.GetAxis("Mouse X")<0){
