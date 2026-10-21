@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 1185314904}
   - component: {fileID: 1185314903}
   - component: {fileID: 1185314907}
+  - component: {fileID: 1185314908}
   m_Layer: 0
   m_Name: PlayerObj
   m_TagString: Untagged
@@ -382,13 +383,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185314901}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee024a45ccb05724ba2c791bab5dc221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BasicMovementScript
   movementSpeed: 5
   rotationSpeed: 70
+--- !u!114 &1185314908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185314901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a7567ce46b1b04885fde514af6a166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RBNav_Kerri
+  speed: 10
 --- !u!1 &1426766566
 GameObject:
   m_ObjectHideFlags: 0
