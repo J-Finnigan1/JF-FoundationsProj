@@ -464,7 +464,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 86.8
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -490,8 +490,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426766566}
   serializedVersion: 2
+<<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07214, y: 0.94000006, z: -0.06000042}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,11 +555,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1426766566}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: dc994e8821a7a5e42aede1c1a5e8407f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirstPersonCamera
   playerObj: {fileID: 1185314902}
   mouseSensitivity: 2
+=======
+  m_Script: {fileID: 11500000, guid: 00548ca2a2a9a0e488886e7862551dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraRotationCtrl
+  rotationSpeed: 500
+>>>>>>> Stashed changes
 --- !u!1 &1505657098
 GameObject:
   m_ObjectHideFlags: 0
