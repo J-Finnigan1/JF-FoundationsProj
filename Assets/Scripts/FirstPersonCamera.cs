@@ -15,13 +15,13 @@ public class FirstPersonCamera : MonoBehaviour
     {
     //Unity Documentation - https://docs.unity3d.com/ScriptReference/CursorLockMode.Locked.html
         Cursor.lockState = CursorLockMode.Locked; 
+        Cursor.visible = true;
 
         //Mouse Inputs
         float inputX = Input.GetAxis("Mouse X")*mouseSensitivity;
         float inputY = Input.GetAxis("Mouse Y")*mouseSensitivity;
 
         //rotate around local X
-
         cameraverticalRotation -= inputY;
         cameraverticalRotation=Mathf.Clamp(cameraverticalRotation, -90f, 90f);
         transform.localEulerAngles=Vector3.right*cameraverticalRotation;

@@ -10,5 +10,6 @@ public class ClicktoDestroy : MonoBehaviour
         // Debug.LogError("Object was clicked"); // this log error will stop play mode in the editor    
         // Debug.LogWarning("Object was clicked");
         Destroy(ClickObjToDestroy);
+        
     }
 }
