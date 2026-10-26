@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RBNav : MonoBehaviour
+public class DestroyHand_Sphere : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -15,7 +15,7 @@ public class FirstPersonCamera : MonoBehaviour
     {
     //Unity Documentation - https://docs.unity3d.com/ScriptReference/CursorLockMode.Locked.html
         Cursor.lockState = CursorLockMode.Locked; 
-        Cursor.visible = true;
+       
 
         //Mouse Inputs
         float inputX = Input.GetAxis("Mouse X")*mouseSensitivity;

@@ -1,4 +1,5 @@
 using NUnit.Framework.Constraints;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ClicktoDest_EnableObj : MonoBehaviour
@@ -9,7 +10,8 @@ public class ClicktoDest_EnableObj : MonoBehaviour
     void OnMouseDown()
     {
         if (EnableInHand.activeInHierarchy == false )
-        {
+        { 
+        
 
         Debug.Log("object was clicked");
         // Debug.LogError("Object was clicked"); // this log error will stop play mode in the editor    
@@ -23,5 +25,7 @@ public class ClicktoDest_EnableObj : MonoBehaviour
         {
             Debug.Log("You already have an object in your hand");
         }
+
+
     }
 }
