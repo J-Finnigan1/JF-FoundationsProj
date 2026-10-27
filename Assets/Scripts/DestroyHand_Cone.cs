@@ -6,6 +6,7 @@ public class DestroyHand_Cone : MonoBehaviour
 {
     public GameObject Cone_hand;
     public GameObject Cone_Cauld;
+    public GameObject InHandChecker;
 
   Animator animator;
     void Start()
@@ -16,11 +17,15 @@ public class DestroyHand_Cone : MonoBehaviour
    
    void OnMouseDown()
     {
-         if (Cone_hand.activeInHierarchy == true ) 
-            {
-            Cone_hand.SetActive(false);
-            Cone_Cauld.SetActive(true);
-            animator.SetBool("IsClicked", true);
-            }
+        if(InHandChecker.activeInHierarchy == true)
+        {
+            if (Cone_hand.activeInHierarchy == true ) 
+                {
+                Cone_hand.SetActive(false);
+                Cone_Cauld.SetActive(true);
+                InHandChecker.SetActive(false);
+                animator.SetBool("IsClicked", true);
+                }
+        }
     }
 }
