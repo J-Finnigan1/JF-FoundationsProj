@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MovementScriptV3 : MonoBehaviour
 {
-    public float rotationspeed;
+    public float rotationspeed = 10f;
     Vector3 _movement;
     Rigidbody _rb;
     public float movementSpeed = 5f;
