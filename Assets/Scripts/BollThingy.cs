@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BollThingy : MonoBehaviour
 {
-public ObjInHand objInHand;
+private ObjInHand objInHand;
 
 public bool isInHand = false;
 
