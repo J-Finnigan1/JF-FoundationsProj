@@ -4558,7 +4558,8 @@ Transform:
   m_LocalPosition: {x: 0.5463452, y: -0.004375, z: -0.728008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1638421268}
   m_Father: {fileID: 1425405939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &703740827
@@ -4924,6 +4925,7 @@ GameObject:
   - component: {fileID: 780124818}
   - component: {fileID: 780124817}
   - component: {fileID: 780124819}
+  - component: {fileID: 780124820}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -5025,6 +5027,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2959467708922500008, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!95 &780124820
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780124815}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c10be68aada7a046b9aa2341c538f76, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &788778862
 GameObject:
   m_ObjectHideFlags: 0
@@ -14611,8 +14635,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1425405939}
-  - component: {fileID: 1425405940}
   - component: {fileID: 1425405941}
+  - component: {fileID: 1425405942}
+  - component: {fileID: 1425405943}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -14640,21 +14665,6 @@ Transform:
   - {fileID: 2072992753}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1425405940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425405937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 0}
-  ShelfObj: {fileID: 0}
-  EnableInHand: {fileID: 479062912}
 --- !u!95 &1425405941
 Animator:
   serializedVersion: 7
@@ -14677,6 +14687,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1425405942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425405937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bbb849187933544dac99120a5e3d27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GiveWitchBook
+  BoolCheck: {fileID: 1837525440}
+  BookInHand: {fileID: 1548873178}
+  WitchBook: {fileID: 1638421265}
+--- !u!65 &1425405943
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425405937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1425999637
 GameObject:
   m_ObjectHideFlags: 0
@@ -16194,6 +16240,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610959340}
   m_Mesh: {fileID: -75171668026845272, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1 &1638421265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+  m_PrefabInstance: {fileID: 1824446852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1638421268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+  m_PrefabInstance: {fileID: 1824446852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1643660093
 GameObject:
   m_ObjectHideFlags: 0
@@ -17888,6 +17944,79 @@ MonoBehaviour:
   boolCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1821769689}
   EnableInHand: {fileID: 1548873178}
+--- !u!1001 &1824446852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 703740826}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39307
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39307007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.76218563
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.038
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.464
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.46306086
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.17094341
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08205821
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.86580575
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 17.482
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 13.336
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 125.781
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_Name
+      value: open book
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8d91d44f20ff2b4ab53f7965d14439d, type: 3}
 --- !u!1 &1830908196
 GameObject:
   m_ObjectHideFlags: 0
@@ -18096,8 +18225,8 @@ GameObject:
   - component: {fileID: 1844151507}
   - component: {fileID: 1844151506}
   - component: {fileID: 1844151505}
-  - component: {fileID: 1844151509}
   - component: {fileID: 1844151510}
+  - component: {fileID: 1844151509}
   m_Layer: 0
   m_Name: Depo
   m_TagString: Untagged
