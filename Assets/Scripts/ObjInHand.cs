@@ -6,7 +6,6 @@ public class ObjInHand : MonoBehaviour
 {
     public BollThingy boolCheck;
     public GameObject ShelfObj;
-    //the box is used as a debugging tool - visual flag (and placeholder for script linking)
 
     public GameObject EnableInHand;
 
