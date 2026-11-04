@@ -6,20 +6,13 @@ using UnityEngine;
 public class DestroyHand_Cone : MonoBehaviour
 {  
     Animator animator;
+
     public BollThingy boolCheck;
-//-------------------------------------------------------
-
     public GameObject Cone_Hand;
-    public GameObject Cone_Cauld;
-//-------------------------------------------------------
-
     public GameObject Cube_Hand;
-    public GameObject Cube_Cauld;
-//-------------------------------------------------------
-
     public GameObject Sphere_Hand;
-    public GameObject Sphere_Cauld;
-//-------------------------------------------------------
+    public GameObject Rice_Hand;    
+    public GameObject Green_Hand;
 
     void Start()
     {
@@ -34,7 +27,6 @@ public class DestroyHand_Cone : MonoBehaviour
             if (Cone_Hand.activeInHierarchy == true ) 
             {
                 Cone_Hand.SetActive(false);
-                Cone_Cauld.SetActive(true);
                 boolCheck.isInHand = false;
                 animator.SetTrigger("ConePotion");
 
@@ -43,7 +35,6 @@ public class DestroyHand_Cone : MonoBehaviour
             if (Cube_Hand.activeInHierarchy == true ) 
             {
                 Cube_Hand.SetActive(false);
-                Cube_Cauld.SetActive(true);
                 boolCheck.isInHand = false;
                 animator.SetTrigger("CubePotion");
 
@@ -52,10 +43,23 @@ public class DestroyHand_Cone : MonoBehaviour
             if (Sphere_Hand.activeInHierarchy == true ) 
             {
                 Sphere_Hand.SetActive(false);
-                Sphere_Cauld.SetActive(true);
                 boolCheck.isInHand = false;
                 animator.SetTrigger("SpherePotion");
             }
+
+            if (Rice_Hand.activeInHierarchy == true ) 
+            {
+                Rice_Hand.SetActive(false);
+                boolCheck.isInHand = false;
+                animator.SetTrigger("RicePlate");
+            }
+            if (Green_Hand.activeInHierarchy == true ) 
+            {
+                Green_Hand.SetActive(false);
+                boolCheck.isInHand = false;
+                animator.SetTrigger("GreenPlate");
+            }
+
         }
     }
 }
