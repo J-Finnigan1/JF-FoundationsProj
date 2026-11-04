@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -21,26 +23,16 @@ public GameObject PauseUI;
                 PauseUI.SetActive(true);
                 Cursor.lockState = CursorLockMode.None; 
             }
-
-            else
-            {
-                Time.timeScale = 1;
-                Debug.Log("Game Unpaused");
-    
-                CamCtrl.enabled = true;
-                Crosshair.SetActive(true);
-                PauseUI.SetActive(false);
-                Cursor.lockState = CursorLockMode.Locked; 
-
-            }
-
-
-
         }        
-
     }
-    
+    public void OnClick()
+    {
+        Time.timeScale = 1;
+        Debug.Log("Game Paused");
 
-
-
+        CamCtrl.enabled = true;
+        Crosshair.SetActive(true);
+        PauseUI.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked; 
+    }
 }
