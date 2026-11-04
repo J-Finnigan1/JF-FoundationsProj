@@ -3,7 +3,9 @@ using UnityEngine;
 public class GiveWitchBook : MonoBehaviour
 {
 Animator animator;    
-public BollThingy BoolCheck;
+public BollThingy InHandCheck;
+public BollThingy BookCheck;
+
 public GameObject BookInHand;
 public GameObject WitchBook;
 
@@ -15,13 +17,14 @@ public GameObject WitchBook;
 
     void OnMouseDown()
     {
-        if (BoolCheck.isInHand == true)
+        if (InHandCheck.isInHand == true)
         {
             if(BookInHand.activeInHierarchy == true)
             {
                 Debug.Log("Book Deposited");
                 BookInHand.SetActive(false);
-                BoolCheck.isInHand = false;
+                InHandCheck.isInHand = false;
+                BookCheck.isBookActive = true;
                 animator.SetTrigger("GivenBook");
             }
         }

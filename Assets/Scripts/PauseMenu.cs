@@ -19,7 +19,9 @@ public GameObject PauseUI;
                 CamCtrl.enabled = false;
                 Crosshair.SetActive(false);
                 PauseUI.SetActive(true);
+                Cursor.lockState = CursorLockMode.None; 
             }
+
             else
             {
                 Time.timeScale = 1;
@@ -28,6 +30,8 @@ public GameObject PauseUI;
                 CamCtrl.enabled = true;
                 Crosshair.SetActive(true);
                 PauseUI.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked; 
+
             }
 
 

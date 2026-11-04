@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 64754829}
   m_Layer: 0
   m_Name: Plate004
-  m_TagString: Untagged
+  m_TagString: Green_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,7 +347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 64754827}
   EnableInHand: {fileID: 1743590050}
 --- !u!64 &64754830
@@ -860,7 +861,7 @@ GameObject:
   - component: {fileID: 126279417}
   m_Layer: 0
   m_Name: SpherePotion-Anim
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,7 +875,7 @@ Transform:
   m_GameObject: {fileID: 126279415}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.008000135, y: -0.107, z: -0.014}
+  m_LocalPosition: {x: -0.008000135, y: -0.10699999, z: -0.013999939}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -955,7 +956,7 @@ GameObject:
   - component: {fileID: 127857846}
   m_Layer: 0
   m_Name: Plate
-  m_TagString: Untagged
+  m_TagString: White_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -987,7 +988,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 127857844}
   EnableInHand: {fileID: 1471162346}
 --- !u!64 &127857847
@@ -1099,8 +1101,8 @@ Transform:
   m_LocalScale: {x: 3.4307952, y: 3.4307952, z: 3.4307952}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 810737924}
   - {fileID: 1975030714}
+  - {fileID: 810737924}
   m_Father: {fileID: 1263702758}
   m_LocalEulerAnglesHint: {x: -106.854, y: -40.421997, z: 4.1909943}
 --- !u!1 &135202663
@@ -1939,7 +1941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1987968462}
   EnableInHand: {fileID: 131970404}
 --- !u!1 &260760530
@@ -1995,7 +1998,7 @@ GameObject:
   - component: {fileID: 270111947}
   m_Layer: 0
   m_Name: top book003
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2085,7 +2088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 270111942}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &270111947
@@ -2249,7 +2253,7 @@ GameObject:
   - component: {fileID: 318027249}
   m_Layer: 0
   m_Name: top book006
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2339,7 +2343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 318027244}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &318027249
@@ -2376,9 +2381,10 @@ GameObject:
   - component: {fileID: 321237482}
   - component: {fileID: 321237481}
   - component: {fileID: 321237483}
+  - component: {fileID: 321237484}
   m_Layer: 0
   m_Name: PotionSphere4
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,9 +2476,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 321237479}
   EnableInHand: {fileID: 469643466}
+--- !u!64 &321237484
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321237479}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5349639972709492842, guid: 88bf13cb86ab0964aadd38d72f81468c, type: 3}
 --- !u!1 &338787879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2835,7 +2864,7 @@ GameObject:
   - component: {fileID: 363581448}
   m_Layer: 0
   m_Name: top book005
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2925,7 +2954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 363581443}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &363581448
@@ -3353,7 +3383,7 @@ GameObject:
   - component: {fileID: 484528771}
   m_Layer: 0
   m_Name: Bottom Book005
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3443,7 +3473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 484528766}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &484528771
@@ -3468,6 +3499,143 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1048106944820299661, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1 &509921724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509921725}
+  - component: {fileID: 509921727}
+  - component: {fileID: 509921726}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &509921725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509921724}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 750493725}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &509921726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509921724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Button
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &509921727
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509921724}
+  m_CullTransparentMesh: 1
 --- !u!1 &514344044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3569,11 +3737,9 @@ GameObject:
   - component: {fileID: 534008562}
   - component: {fileID: 534008566}
   - component: {fileID: 534008565}
-  - component: {fileID: 534008564}
-  - component: {fileID: 534008563}
   m_Layer: 0
   m_Name: RicePlate-Anim
-  m_TagString: Untagged
+  m_TagString: White_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3593,43 +3759,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1844151508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534008563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534008561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
-  ShelfObj: {fileID: 534008561}
-  EnableInHand: {fileID: 1471162346}
---- !u!64 &534008564
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534008561}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4110418278927279470, guid: 2fbe334f3db368347b07af753ecca1fa, type: 3}
 --- !u!23 &534008565
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3699,11 +3828,9 @@ GameObject:
   - component: {fileID: 547741285}
   - component: {fileID: 547741289}
   - component: {fileID: 547741288}
-  - component: {fileID: 547741287}
-  - component: {fileID: 547741286}
   m_Layer: 0
   m_Name: GreenPlate-Anim
-  m_TagString: Untagged
+  m_TagString: Green_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3723,43 +3850,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1844151508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &547741286
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547741284}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4352000775891598926, guid: 2fbe334f3db368347b07af753ecca1fa, type: 3}
---- !u!114 &547741287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547741284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
-  ShelfObj: {fileID: 547741284}
-  EnableInHand: {fileID: 1743590050}
 --- !u!23 &547741288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3866,7 +3956,7 @@ GameObject:
   - component: {fileID: 564453282}
   m_Layer: 0
   m_Name: top book009
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3956,7 +4046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 564453278}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &564453283
@@ -4460,7 +4551,7 @@ GameObject:
   - component: {fileID: 614391774}
   m_Layer: 0
   m_Name: top book008
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4550,7 +4641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 614391769}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &614391774
@@ -4587,9 +4679,10 @@ GameObject:
   - component: {fileID: 627705612}
   - component: {fileID: 627705611}
   - component: {fileID: 627705613}
+  - component: {fileID: 627705614}
   m_Layer: 0
   m_Name: PotionSphere2
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4681,9 +4774,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 627705609}
   EnableInHand: {fileID: 469643466}
+--- !u!64 &627705614
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627705609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3768742663507555713, guid: 88bf13cb86ab0964aadd38d72f81468c, type: 3}
 --- !u!1 &634553261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4695,7 +4811,7 @@ GameObject:
   - component: {fileID: 634553262}
   m_Layer: 0
   m_Name: CubePotion-Anim
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4934,7 +5050,7 @@ GameObject:
   - component: {fileID: 661981441}
   m_Layer: 0
   m_Name: top book002
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5024,7 +5140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 661981436}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &661981441
@@ -5230,37 +5347,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675667436}
   m_Mesh: {fileID: -8672714952799723808, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
---- !u!1 &676650603
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 676650604}
-  m_Layer: 0
-  m_Name: Plates
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &676650604
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676650603}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.0850022, y: 1.0168635, z: -2.7138236}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689580541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5274,7 +5360,7 @@ GameObject:
   - component: {fileID: 689580543}
   m_Layer: 0
   m_Name: CubePotion1
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5308,7 +5394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 0}
+  InHandCheck: {fileID: 0}
+  BookCheck: {fileID: 0}
   ShelfObj: {fileID: 0}
   EnableInHand: {fileID: 131970404}
 --- !u!64 &689580544
@@ -5604,6 +5691,127 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722352078}
   m_Mesh: {fileID: -8298940227465870776, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1 &750493724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750493725}
+  - component: {fileID: 750493728}
+  - component: {fileID: 750493727}
+  - component: {fileID: 750493726}
+  m_Layer: 0
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &750493725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750493724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 509921725}
+  m_Father: {fileID: 2138313296}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1017.9285, y: 61.83185}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5745533, y: 2.5610588}
+--- !u!114 &750493726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750493724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 750493727}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &750493727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750493724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &750493728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750493724}
+  m_CullTransparentMesh: 1
 --- !u!1 &770051035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6231,7 +6439,7 @@ GameObject:
   - component: {fileID: 844898855}
   m_Layer: 0
   m_Name: Plate002
-  m_TagString: Untagged
+  m_TagString: White_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6263,7 +6471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 844898853}
   EnableInHand: {fileID: 1471162346}
 --- !u!64 &844898856
@@ -6361,7 +6570,7 @@ GameObject:
   - component: {fileID: 851563930}
   m_Layer: 0
   m_Name: Bottom Book006
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6451,7 +6660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 851563925}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &851563930
@@ -6491,7 +6701,7 @@ GameObject:
   - component: {fileID: 859496528}
   m_Layer: 0
   m_Name: Bottom Book004
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6581,7 +6791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 859496523}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &859496528
@@ -6621,7 +6832,7 @@ GameObject:
   - component: {fileID: 896761777}
   m_Layer: 0
   m_Name: Bottom Book009
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6711,7 +6922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 896761772}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &896761777
@@ -7086,7 +7298,7 @@ GameObject:
   - component: {fileID: 923287419}
   m_Layer: 0
   m_Name: CubePotion5
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7436,7 +7648,7 @@ GameObject:
   - component: {fileID: 1024175019}
   m_Layer: 0
   m_Name: Bottom Book000
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7526,7 +7738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1024175014}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1024175019
@@ -7689,7 +7902,7 @@ GameObject:
   - component: {fileID: 1034641202}
   m_Layer: 0
   m_Name: Plate003
-  m_TagString: Untagged
+  m_TagString: Green_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7743,7 +7956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1034641200}
   EnableInHand: {fileID: 1743590050}
 --- !u!23 &1034641204
@@ -7942,7 +8156,7 @@ GameObject:
   - component: {fileID: 1080227496}
   m_Layer: 0
   m_Name: top book007
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8032,7 +8246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1080227491}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1080227496
@@ -8486,7 +8701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 923287418}
   EnableInHand: {fileID: 131970404}
 --- !u!1 &1183260915
@@ -8504,7 +8720,7 @@ GameObject:
   - component: {fileID: 1183260920}
   m_Layer: 0
   m_Name: PotionCone1
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8596,7 +8812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1183260915}
   EnableInHand: {fileID: 479062912}
 --- !u!64 &1183260920
@@ -8636,7 +8853,7 @@ GameObject:
   - component: {fileID: 1189024452}
   m_Layer: 0
   m_Name: Plate005
-  m_TagString: Untagged
+  m_TagString: Green_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8690,7 +8907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1189024450}
   EnableInHand: {fileID: 1743590050}
 --- !u!23 &1189024454
@@ -8768,7 +8986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1193396890
 Transform:
   m_ObjectHideFlags: 0
@@ -8777,8 +8995,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193396889}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0012792968, y: 0, z: 0.047493592}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0012793536, y: 0, z: 0.047493584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8857,7 +9075,7 @@ GameObject:
   - component: {fileID: 1201255805}
   m_Layer: 0
   m_Name: top book004
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8947,7 +9165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1201255800}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1201255805
@@ -9511,14 +9730,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'This witch kidnapped me at the bar because I rambled about my hatred of
-    programming in C#
+    the beetles
 
 
-    Now she''s forcing me to help her make a potion that
-    "totally wont end the world" (blatant lie)'
+    Now she''s forcing me to help her make a potion that "totally
+    wont end the world" (blatant lie)'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9610,7 +9829,7 @@ GameObject:
   - component: {fileID: 1337194826}
   m_Layer: 0
   m_Name: Bottom Book002
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9700,7 +9919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1337194821}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1337194826
@@ -9740,7 +9960,7 @@ GameObject:
   - component: {fileID: 1343681487}
   m_Layer: 0
   m_Name: PotionCone3
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9832,7 +10052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1343681482}
   EnableInHand: {fileID: 479062912}
 --- !u!64 &1343681487
@@ -9962,7 +10183,7 @@ GameObject:
   - component: {fileID: 1361272984}
   m_Layer: 0
   m_Name: PotionCone4
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10054,7 +10275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1361272979}
   EnableInHand: {fileID: 479062912}
 --- !u!64 &1361272984
@@ -10090,7 +10312,7 @@ GameObject:
   - component: {fileID: 1364800455}
   m_Layer: 0
   m_Name: CubePotion4
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10127,7 +10349,7 @@ GameObject:
   - component: {fileID: 1366593724}
   m_Layer: 0
   m_Name: PotionSphere1
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10219,7 +10441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1366593719}
   EnableInHand: {fileID: 469643466}
 --- !u!64 &1366593724
@@ -15329,7 +15552,7 @@ GameObject:
   - component: {fileID: 1380751457}
   m_Layer: 0
   m_Name: PotionCone5
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15421,7 +15644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1380751452}
   EnableInHand: {fileID: 479062912}
 --- !u!64 &1380751457
@@ -15942,7 +16166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbb849187933544dac99120a5e3d27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GiveWitchBook
-  BoolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   BookInHand: {fileID: 1548873178}
   WitchBook: {fileID: 1638421265}
 --- !u!65 &1425405943
@@ -16332,7 +16557,7 @@ GameObject:
   - component: {fileID: 1462653369}
   m_Layer: 0
   m_Name: CubePotion2
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16366,7 +16591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 0}
+  BookCheck: {fileID: 0}
   ShelfObj: {fileID: 1462653367}
   EnableInHand: {fileID: 131970404}
 --- !u!64 &1462653370
@@ -16661,7 +16887,7 @@ GameObject:
   - component: {fileID: 1507274868}
   m_Layer: 0
   m_Name: Bottom Book001
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16751,7 +16977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1507274863}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1507274868
@@ -17148,7 +17375,7 @@ GameObject:
   - component: {fileID: 1582418229}
   m_Layer: 0
   m_Name: CubePotion6
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17182,9 +17409,10 @@ GameObject:
   - component: {fileID: 1586843626}
   - component: {fileID: 1586843625}
   - component: {fileID: 1586843627}
+  - component: {fileID: 1586843628}
   m_Layer: 0
   m_Name: PotionSphere5
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17276,9 +17504,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1586843623}
   EnableInHand: {fileID: 469643466}
+--- !u!64 &1586843628
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586843623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1279796275759279611, guid: 88bf13cb86ab0964aadd38d72f81468c, type: 3}
 --- !u!1 &1598154235
 GameObject:
   m_ObjectHideFlags: 0
@@ -17791,7 +18042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1364800454}
   EnableInHand: {fileID: 131970404}
 --- !u!64 &1655862518
@@ -17864,7 +18116,7 @@ GameObject:
   - component: {fileID: 1678101749}
   m_Layer: 0
   m_Name: Plate001
-  m_TagString: Untagged
+  m_TagString: White_Plate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17918,7 +18170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1678101747}
   EnableInHand: {fileID: 1471162346}
 --- !u!23 &1678101751
@@ -18321,7 +18574,7 @@ GameObject:
   - component: {fileID: 1720918023}
   m_Layer: 0
   m_Name: ConePotion-Anim
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18416,7 +18669,7 @@ GameObject:
   - component: {fileID: 1722660171}
   m_Layer: 0
   m_Name: top book000
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18506,7 +18759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1722660166}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1722660171
@@ -18925,11 +19179,11 @@ GameObject:
   - component: {fileID: 1770048673}
   - component: {fileID: 1770048675}
   - component: {fileID: 1770048674}
-  - component: {fileID: 1770048677}
   - component: {fileID: 1770048676}
+  - component: {fileID: 1770048677}
   m_Layer: 0
   m_Name: PotionSphere3
-  m_TagString: Untagged
+  m_TagString: Sphere_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19021,7 +19275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1770048672}
   EnableInHand: {fileID: 469643466}
 --- !u!64 &1770048677
@@ -19354,7 +19609,7 @@ GameObject:
   - component: {fileID: 1821769694}
   m_Layer: 0
   m_Name: top book001
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19444,7 +19699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1821769689}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1821769694
@@ -19739,6 +19995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BollThingy
   isInHand: 0
+  isBookActive: 0
 --- !u!114 &1837525441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19765,8 +20022,9 @@ GameObject:
   - component: {fileID: 1844151508}
   - component: {fileID: 1844151507}
   - component: {fileID: 1844151506}
-  - component: {fileID: 1844151505}
   - component: {fileID: 1844151510}
+  - component: {fileID: 1844151505}
+  - component: {fileID: 1844151511}
   - component: {fileID: 1844151509}
   m_Layer: 0
   m_Name: Depo
@@ -19891,6 +20149,7 @@ MonoBehaviour:
   Sphere_Hand: {fileID: 469643466}
   Rice_Hand: {fileID: 1471162346}
   Green_Hand: {fileID: 1743590050}
+  ObjDeposited: 0
 --- !u!95 &1844151510
 Animator:
   serializedVersion: 7
@@ -19913,6 +20172,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1844151511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844151503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f14c33d7d424d146a90d11ad3010308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WinCounter
+  ObjDepo: {fileID: 1844151509}
+  CorrectObj: 0
+  Depo0: {fileID: 479062912}
+  Depo1: {fileID: 1471162346}
+  Depo2: {fileID: 469643466}
+  Depo3: {fileID: 131970404}
+  Depo4: {fileID: 1743590050}
 --- !u!1 &1885224256
 GameObject:
   m_ObjectHideFlags: 0
@@ -20041,7 +20319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1885543367
 Transform:
   m_ObjectHideFlags: 0
@@ -20055,8 +20333,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 193896676}
   - {fileID: 1309637394}
+  - {fileID: 193896676}
   - {fileID: 1399350477}
   m_Father: {fileID: 1598154239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20075,7 +20353,7 @@ GameObject:
   - component: {fileID: 1891621062}
   m_Layer: 0
   m_Name: PotionCone2
-  m_TagString: Untagged
+  m_TagString: Cone_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20167,7 +20445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1891621056}
   EnableInHand: {fileID: 479062912}
 --- !u!64 &1891621062
@@ -20371,7 +20650,7 @@ GameObject:
   - component: {fileID: 1935861702}
   m_Layer: 0
   m_Name: Bottom Book003
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20461,7 +20740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1935861697}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1935861702
@@ -20701,7 +20981,7 @@ GameObject:
   - component: {fileID: 1987968463}
   m_Layer: 0
   m_Name: CubePotion3
-  m_TagString: Untagged
+  m_TagString: Cube_Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20850,7 +21130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 689580541}
   EnableInHand: {fileID: 131970404}
 --- !u!1 &1994073580
@@ -20868,7 +21149,7 @@ GameObject:
   - component: {fileID: 1994073585}
   m_Layer: 0
   m_Name: Bottom Book008
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20958,7 +21239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1994073580}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &1994073585
@@ -21699,7 +21981,7 @@ GameObject:
   - component: {fileID: 2111289849}
   m_Layer: 0
   m_Name: Bottom Book007
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21789,7 +22071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 2111289844}
   EnableInHand: {fileID: 1548873178}
 --- !u!64 &2111289849
@@ -21919,7 +22202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1462653367}
   EnableInHand: {fileID: 131970404}
 --- !u!64 &2124475501
@@ -22071,7 +22355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f049be1b7f4a05438a498b672029274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
-  boolCheck: {fileID: 1837525440}
+  InHandCheck: {fileID: 1837525440}
+  BookCheck: {fileID: 1837525440}
   ShelfObj: {fileID: 1582418228}
   EnableInHand: {fileID: 131970404}
 --- !u!1 &2138313295
@@ -22089,7 +22374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2138313296
 Transform:
   m_ObjectHideFlags: 0
@@ -22106,6 +22391,7 @@ Transform:
   - {fileID: 923017033}
   - {fileID: 1690328783}
   - {fileID: 651883582}
+  - {fileID: 750493725}
   m_Father: {fileID: 1598154239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -22125,7 +22411,6 @@ SceneRoots:
   - {fileID: 260760531}
   - {fileID: 1431553251}
   - {fileID: 1044436402}
-  - {fileID: 676650604}
   - {fileID: 2108892576}
   - {fileID: 1425405939}
   - {fileID: 174507576}
