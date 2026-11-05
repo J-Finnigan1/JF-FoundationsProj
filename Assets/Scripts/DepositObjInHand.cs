@@ -13,7 +13,7 @@ public class DepositObjInHand : MonoBehaviour
     public GameObject Rice_Hand;    
     public GameObject Green_Hand;
 
-    public int ObjDeposited = 1;
+    public int ObjDeposited = 0;
 
     void Start()
     {
