@@ -1270,8 +1270,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.25, y: 8.500002, z: 2.9203827}
-  m_Center: {x: 0, y: 0, z: 1.4601911}
+  m_Size: {x: 1.961977, y: 8.500002, z: 2.9203827}
+  m_Center: {x: 0.8559885, y: 6.5397144e-15, z: 1.4601912}
 --- !u!23 &152592778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2555,8 +2555,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 0.25000006, z: 2.9276557}
-  m_Center: {x: 0, y: 0.0000009536743, z: 1.4638276}
+  m_Size: {x: 10.124028, y: 2.3761768, z: 2.9276555}
+  m_Center: {x: -0.17238092, y: 1.0630894, z: 1.4638276}
 --- !u!23 &338787882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3172,8 +3172,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75101167, y: 2.0242763, z: 0.27000013}
-  m_Center: {x: -0.35969147, y: 1.0121379, z: 0.12500004}
+  m_Size: {x: 1.3940183, y: 2.0242763, z: 2.014255}
+  m_Center: {x: -0.34909174, y: 1.0121379, z: 0.9971279}
 --- !u!23 &416391382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3243,9 +3243,10 @@ GameObject:
   - component: {fileID: 454005315}
   - component: {fileID: 454005314}
   - component: {fileID: 454005313}
+  - component: {fileID: 454005316}
   m_Layer: 0
   m_Name: Quit
-  m_TagString: Untagged
+  m_TagString: QuitBtn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3313,7 +3314,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 454005314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 454005316}
+        m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &454005314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3352,6 +3365,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454005311}
   m_CullTransparentMesh: 1
+--- !u!114 &454005316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454005311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c71fa5962bd64d4081786a8a0838283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitButton
 --- !u!1 &461903702
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,8 +9493,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 0.25000006, z: 2.9203827}
-  m_Center: {x: 0, y: -0.0000009536743, z: 1.4601911}
+  m_Size: {x: 6, y: 1.3497721, z: 2.9203827}
+  m_Center: {x: 0, y: -0.5498872, z: 1.4601912}
 --- !u!23 &1209269725
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16390,6 +16415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bbb849187933544dac99120a5e3d27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GiveWitchBook
+  animator: {fileID: 0}
   CauldronAnimator: {fileID: 0}
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
@@ -19662,8 +19688,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.25, y: 8.500002, z: 2.9276557}
-  m_Center: {x: 0, y: 0.00000023841864, z: 1.4638276}
+  m_Size: {x: 2.3824863, y: 9.932756, z: 2.9276555}
+  m_Center: {x: -1.0662432, y: 0.71637726, z: 1.4638276}
 --- !u!23 &1764663714
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20748,6 +20774,7 @@ MonoBehaviour:
   Depo2: {fileID: 469643466}
   Depo3: {fileID: 131970404}
   Depo4: {fileID: 1743590050}
+  animator: {fileID: 1844151510}
   WitchAnimator: {fileID: 1425405941}
 --- !u!1 &1885224256
 GameObject:

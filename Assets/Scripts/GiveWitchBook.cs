@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class GiveWitchBook : MonoBehaviour
+public class WitchInteraction : MonoBehaviour
 {
-Animator animator;    
+public Animator animator;    
 public Animator CauldronAnimator;
 public BollThingy InHandCheck;
 public BollThingy BookCheck;
@@ -42,22 +42,8 @@ public WinCounter CorrectObj;
             }
         }
 
-        if (ObjDepo.ObjDeposited == 5)
-        {
-            if (ObjDepo.ObjDeposited == 5 && CorrectObj.CorrectObj == 5)
-            {
-                Player.SetActive(false); 
-                Crosshair.SetActive(false); 
-                CutsceneCam.SetActive(true);
-                animator.SetTrigger("BadEnd");
-            }
-            else 
-            {
-                Player.SetActive(false); 
-                Crosshair.SetActive(false); 
-                CutsceneCam.SetActive(true);
-                animator.SetTrigger("GoodEnd");
-            }
-        }
+        
+            
+        
     }
 }

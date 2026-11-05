@@ -18,13 +18,12 @@ public class WinCounter : MonoBehaviour
     public GameObject Depo3;
     public GameObject Depo4;
 //---------------------------------------------------
-    Animator animator;
+    public Animator animator;
     public Animator WitchAnimator;
 
     void Start()
     {
         animator=GetComponent<Animator>();
-        WitchAnimator=GetComponent<Animator>();
     }
 
     void OnMouseDown()
@@ -86,6 +85,7 @@ public class WinCounter : MonoBehaviour
                 CutsceneCam.SetActive(true);
                 animator.SetBool("GoodEnd", true);
                 WitchAnimator.SetTrigger("Ending");
+
             }
         }
     }

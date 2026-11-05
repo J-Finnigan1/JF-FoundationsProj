@@ -10,6 +10,8 @@ TagManager:
   - Book
   - Green_Plate
   - White_Plate
+  - StartBtn
+  - QuitBtn
   layers:
   - Default
   - TransparentFX
