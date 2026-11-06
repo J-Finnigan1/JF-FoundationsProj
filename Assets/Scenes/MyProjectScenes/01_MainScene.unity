@@ -2449,6 +2449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1155994813}
   - {fileID: 156492361}
   - {fileID: 1837525437}
   - {fileID: 1712200828}
@@ -9412,7 +9413,7 @@ GameObject:
   - component: {fileID: 1128975682}
   - component: {fileID: 1128975681}
   - component: {fileID: 1128975680}
-  - component: {fileID: 1128975679}
+  - component: {fileID: 1128975683}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -9440,22 +9441,6 @@ RectTransform:
   m_AnchoredPosition: {x: -627, y: 243}
   m_SizeDelta: {x: 391.84448, y: 150.8702}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &1128975679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128975677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1bfc33bc14e794b88aa36e6f725051, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartGame
-  Player: {fileID: 182397678}
-  Crosshair: {fileID: 1427351250}
-  StartMenu: {fileID: 1885543366}
-  StartCam: {fileID: 1791709767}
 --- !u!114 &1128975680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9500,8 +9485,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128975679}
-        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+      - m_Target: {fileID: 1128975683}
+        m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -9550,6 +9535,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128975677}
   m_CullTransparentMesh: 1
+--- !u!114 &1128975683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128975677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c71fa5962bd64d4081786a8a0838283, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitButton
 --- !u!1 &1129884082
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,6 +9635,53 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1155994812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155994813}
+  - component: {fileID: 1155994814}
+  m_Layer: 0
+  m_Name: EndScreenManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155994813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155994812}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 696.34595, y: 751.55347, z: -0.87898}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 312827179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1155994814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155994812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111c3950865ea5845820c745d6c472fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEndScreen
+  AnimComplete: 0
+  ObjDepo: {fileID: 1844151509}
+  CorObj: {fileID: 1844151511}
 --- !u!1 &1171040416
 GameObject:
   m_ObjectHideFlags: 0
@@ -10807,11 +10851,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'This witch kidnapped me at the bar because I rambled about my hatred of
-    the beetles
+    Beetroot.
 
 
     Now she''s forcing me to help her make a potion that "totally
-    wont end the world" (blatant lie)'
+    wont end the world" (blatant lie).'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -21796,6 +21840,7 @@ GameObject:
   - component: {fileID: 1844151505}
   - component: {fileID: 1844151511}
   - component: {fileID: 1844151509}
+  - component: {fileID: 1844151512}
   m_Layer: 0
   m_Name: Depo
   m_TagString: Untagged
@@ -21967,6 +22012,21 @@ MonoBehaviour:
   Depo4: {fileID: 1743590050}
   animator: {fileID: 1844151510}
   WitchAnimator: {fileID: 1425405941}
+--- !u!114 &1844151512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844151503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111c3950865ea5845820c745d6c472fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEndScreen
+  AnimComplete: 0
+  ObjDepo: {fileID: 1844151509}
+  CorObj: {fileID: 1844151511}
 --- !u!1 &1885224256
 GameObject:
   m_ObjectHideFlags: 0
@@ -22095,7 +22155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1885543367
 Transform:
   m_ObjectHideFlags: 0

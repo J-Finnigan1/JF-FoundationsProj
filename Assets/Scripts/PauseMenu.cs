@@ -28,7 +28,7 @@ public GameObject PauseUI;
     public void OnClick()
     {
         Time.timeScale = 1;
-        Debug.Log("Game Paused");
+        Debug.Log("Game Resumed");
 
         CamCtrl.enabled = true;
         Crosshair.SetActive(true);
