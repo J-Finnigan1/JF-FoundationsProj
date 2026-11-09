@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class WitchInteraction : MonoBehaviour
+public class GiveWitchBook : MonoBehaviour
 {
-public Animator animator;    
+Animator animator;    
 public Animator CauldronAnimator;
 public BollThingy InHandCheck;
 public BollThingy BookCheck;
@@ -13,18 +13,16 @@ public GameObject WitchBook;
 //---------
 public DepositObjInHand ObjDepo;
 public WinCounter CorrectObj;
-    public GameObject Player;
-    public GameObject Crosshair;
-    public GameObject CutsceneCam;
-
-
-
+public GameObject Player;
+//---------
+public GameObject GuideText1;
+public GameObject GuideText2;
+public GameObject IngredientList;
 //---------
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        CauldronAnimator=GetComponent<Animator>();
     }
 
 
@@ -39,11 +37,14 @@ public WinCounter CorrectObj;
                 InHandCheck.isInHand = false;
                 BookCheck.isBookActive = true;
                 animator.SetTrigger("GivenBook");
+
+                GuideText1.SetActive(false);
+                GuideText2.SetActive(true);
+                IngredientList.SetActive(true);
+
             }
         }
 
-        
-            
         
     }
 }

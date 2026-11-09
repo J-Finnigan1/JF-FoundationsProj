@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class TriggerEndScreen : MonoBehaviour
 {
     public bool AnimComplete = false;
-     public DepositObjInHand ObjDepo;
-     public WinCounter CorObj;
+    public DepositObjInHand ObjDepo;
+    public SecretEnding AnimEnd;
+    public WinCounter CorObj;
+    public GameObject Bottle;
+
+
 
     public void Update()
     {
@@ -19,6 +24,7 @@ public class TriggerEndScreen : MonoBehaviour
                 AnimComplete = false;
                 Cursor.lockState = CursorLockMode.None;
             }
+
             else
             {
                 Debug.Log("Good Ending");
@@ -27,5 +33,22 @@ public class TriggerEndScreen : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
         }
+
+        if (AnimEnd == true)
+        {
+            if (Bottle.activeInHierarchy == true)
+            {
+                Debug.Log("Secret Ending");
+                SceneManager.LoadScene("04_SecretEndingScreen", LoadSceneMode.Single);
+                AnimComplete = false;
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
+
+
+
+
+
+
     }
 }

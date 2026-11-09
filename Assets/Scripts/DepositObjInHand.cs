@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 public class DepositObjInHand : MonoBehaviour
@@ -13,16 +14,20 @@ public class DepositObjInHand : MonoBehaviour
     public GameObject Green_Hand;
 
     public int ObjDeposited = 0;
+    public bool AnimLock = false;
 
     void Start()
     {
         animator=GetComponent<Animator>();
     }
 
+
    
    void OnMouseDown()
     {
-        if(boolCheck.isInHand == true) // if there is an "object in hand" then...
+       
+
+        if(boolCheck.isInHand == true && AnimLock == false) // if there is an "object in hand" then...
         {
             if (Cone_Hand.activeInHierarchy == true ) 
             {
@@ -63,7 +68,11 @@ public class DepositObjInHand : MonoBehaviour
                 animator.SetTrigger("GreenPlate");
                 ObjDeposited = ObjDeposited + 1;
             }
-
+        }
+        if(AnimLock == true)
+        {
+            Debug.Log("Patience, young padawan. there is an animation playing");
         }
     }
 }
+

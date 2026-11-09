@@ -3,7 +3,7 @@ using UnityEngine;
 public class BollThingy : MonoBehaviour
 {
 private ObjInHand objInHand;
-private WitchInteraction BookInHand;
+private GiveWitchBook BookInHand;
 
 public bool isInHand = false;
 public bool isBookActive = false;
