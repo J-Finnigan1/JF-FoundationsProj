@@ -54,12 +54,6 @@ public class Bin : MonoBehaviour
                 Softlock = Softlock + 1;
             }
             
-            if (Book_Hand.activeInHierarchy == true ) 
-            {
-                Book_Hand.SetActive(false);
-                boolCheck.isInHand = false;
-            }
-            
             if (Bottle_Hand.activeInHierarchy == true ) 
             {
                 Bottle_Hand.SetActive(false);

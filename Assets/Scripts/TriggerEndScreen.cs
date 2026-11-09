@@ -22,7 +22,6 @@ public class TriggerEndScreen : MonoBehaviour
                 Debug.Log("Bad Ending");
                 SceneManager.LoadScene("03_BadEndScreen", LoadSceneMode.Single);
                 AnimComplete = false;
-                Cursor.lockState = CursorLockMode.None;
             }
 
             else
@@ -30,26 +29,24 @@ public class TriggerEndScreen : MonoBehaviour
                 Debug.Log("Good Ending");
                 SceneManager.LoadScene("02_GoodEndScreen", LoadSceneMode.Single);
                 AnimComplete = false;
-                Cursor.lockState = CursorLockMode.None;
             }
         }
 
-        if (AnimEnd == true)
+        if (AnimEnd.AnimEnd == true)
         {
             if (Bottle.activeInHierarchy == true)
             {
                 Debug.Log("Secret Ending");
-                SceneManager.LoadScene("04_SecretEndingScreen", LoadSceneMode.Single);
                 AnimComplete = false;
-                Cursor.lockState = CursorLockMode.None;
+                AnimEnd.AnimEnd = false;
+                SceneManager.LoadScene("04_SecretEndingScreen", LoadSceneMode.Single);
             }
         }
 
-        if (SoftLock.Softlock == 6)
+        if (SoftLock.Softlock == 18)
         {
             Debug.Log("Softlock");
             SceneManager.LoadScene("05_SoftlockScreen", LoadSceneMode.Single);
-            Cursor.lockState = CursorLockMode.None;
         }
 
 

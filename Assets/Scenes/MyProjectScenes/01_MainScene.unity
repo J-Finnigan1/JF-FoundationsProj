@@ -23086,10 +23086,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerEndScreen
   AnimComplete: 0
   ObjDepo: {fileID: 1844151509}
-  AnimEnd: {fileID: 0}
+  AnimEnd: {fileID: 1263702763}
   CorObj: {fileID: 1844151511}
-  Bottle: {fileID: 0}
-  SoftLock: {fileID: 0}
+  Bottle: {fileID: 979356007}
+  SoftLock: {fileID: 290255336}
 --- !u!1 &1885224256
 GameObject:
   m_ObjectHideFlags: 0
