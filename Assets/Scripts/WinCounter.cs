@@ -74,9 +74,14 @@ public class WinCounter : MonoBehaviour
                 GuideText2.SetActive(false);
                 GuideText3.SetActive(true);
                 IngredientList.SetActive(false);
-
-
             }  
+            
+            else
+            {
+                GuideText2.SetActive(false);
+                GuideText3.SetActive(true);
+                IngredientList.SetActive(false);
+            }
         } 
 
         if (ObjDepo.ObjDeposited == 5 && AnimLock.AnimLock == false)
