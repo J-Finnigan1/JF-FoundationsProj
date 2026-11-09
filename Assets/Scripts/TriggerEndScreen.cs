@@ -10,7 +10,7 @@ public class TriggerEndScreen : MonoBehaviour
     public SecretEnding AnimEnd;
     public WinCounter CorObj;
     public GameObject Bottle;
-
+    public Bin SoftLock;
 
 
     public void Update()
@@ -45,6 +45,12 @@ public class TriggerEndScreen : MonoBehaviour
             }
         }
 
+        if (SoftLock.Softlock == 6)
+        {
+            Debug.Log("Softlock");
+            SceneManager.LoadScene("05_SoftlockScreen", LoadSceneMode.Single);
+            Cursor.lockState = CursorLockMode.None;
+        }
 
 
 

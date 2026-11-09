@@ -12,6 +12,7 @@ TagManager:
   - White_Plate
   - StartBtn
   - QuitBtn
+  - SecretEndingBottle
   layers:
   - Default
   - TransparentFX

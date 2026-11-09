@@ -7,9 +7,11 @@ public class ObjInHand : MonoBehaviour
 {
     public BollThingy InHandCheck;
     public BollThingy BookCheck;
+    public DepositObjInHand DepositCheck;
     public GameObject ShelfObj;
     public GameObject EnableInHand;
-
+    public GameObject MainDialog;
+    public GameObject Drink;
     void Start()
     {
        
@@ -17,17 +19,23 @@ public class ObjInHand : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (InHandCheck.isInHand == false && BookCheck.isBookActive == true)
+        if (InHandCheck.isInHand == false && BookCheck.isBookActive == true && DepositCheck.ObjDeposited < 5)
         {
-            if (EnableInHand.activeInHierarchy == false )
+            
+            if (EnableInHand.activeInHierarchy == false && ShelfObj.tag != "Book" )
             { 
-            Debug.Log("object was clicked");
+                Debug.Log("object was clicked");
 
-            ShelfObj.SetActive(false);
-            EnableInHand.SetActive(true);
-            InHandCheck.isInHand = true;
+                ShelfObj.SetActive(false);
+                EnableInHand.SetActive(true);
+                InHandCheck.isInHand = true;
+            }
+
+            if(ShelfObj.tag == "Book")
+            {
+                Debug.Log("no more books");
+            }
         }
-    }
 
         if (InHandCheck.isInHand == true )
         {
@@ -35,7 +43,7 @@ public class ObjInHand : MonoBehaviour
         }
 
         // https://docs.unity.com/en-us/engine/6000.3/script-reference/unityengine/gameobject/tag
-        if (BookCheck.isBookActive == false)
+        if (BookCheck.isBookActive == false && InHandCheck.isInHand == false)
         {
             if (ShelfObj.tag == "Book")
             {
@@ -44,11 +52,17 @@ public class ObjInHand : MonoBehaviour
                 EnableInHand.SetActive(true);
                 InHandCheck.isInHand = true; 
             }
-            
-            else
-            {
-                Debug.Log("Witch doesnt have a Book");
-            }
+        }
+        
+        if (ShelfObj.tag == "SecretEndingBottle" && InHandCheck.isInHand == false)
+        {
+            Debug.Log("Picked up Bottle"); 
+            ShelfObj.SetActive(false);
+            EnableInHand.SetActive(true);
+            InHandCheck.isInHand = true; 
+
+            Drink.SetActive(true);
+            MainDialog.SetActive(false);
         }
     }
 }

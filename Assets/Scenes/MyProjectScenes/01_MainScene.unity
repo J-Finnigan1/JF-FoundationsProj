@@ -349,8 +349,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 64754827}
   EnableInHand: {fileID: 1743590050}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &64754830
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -990,8 +993,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 127857844}
   EnableInHand: {fileID: 1471162346}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &127857847
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1367,50 +1373,6 @@ Transform:
   - {fileID: 1764663712}
   m_Father: {fileID: 2108892576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &156492359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 156492361}
-  - component: {fileID: 156492360}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &156492360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156492359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 135c2b84f073b3449be1ad51f0420d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadScene
---- !u!4 &156492361
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156492359}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.95436, y: -1.7978001, z: -0.52882}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 312827179}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &165331879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,9 +1616,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1564453114}
-  - {fileID: 306964738}
-  - {fileID: 945857004}
-  - {fileID: 210947786}
+  - {fileID: 1207115812}
+  - {fileID: 1958576545}
   - {fileID: 485059081}
   - {fileID: 1427351251}
   m_Father: {fileID: 1598154239}
@@ -1712,7 +1673,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!136 &182397681
 CapsuleCollider:
@@ -2081,7 +2042,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 181477501}
+  m_Father: {fileID: 1958576545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2317,8 +2278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1987968462}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!1 &260760530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,8 +2428,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 270111942}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &270111947
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2488,6 +2455,116 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6963352090292257047, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1001 &290255334
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09848297
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.365
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      propertyPath: m_Name
+      value: bIN
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 290255336}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 290255340}
+  m_SourcePrefab: {fileID: 100100000, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+--- !u!1 &290255335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 05951f822ca2c9444839e72ecf672d0d, type: 3}
+  m_PrefabInstance: {fileID: 290255334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &290255336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290255335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7ee9e235a82a84f92cdc8fa0a85c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bin
+  boolCheck: {fileID: 1837525440}
+  Book_Hand: {fileID: 1548873178}
+  Bottle_Hand: {fileID: 979356007}
+  Cone_Hand: {fileID: 479062912}
+  Cube_Hand: {fileID: 131970404}
+  Sphere_Hand: {fileID: 469643466}
+  Rice_Hand: {fileID: 1471162346}
+  Green_Hand: {fileID: 1743590050}
+  Softlock: 0
+--- !u!65 &290255340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290255335}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.90418524, y: 0.6714689, z: 1.2414582}
+  m_Center: {x: 0, y: 0, z: 0.6207291}
 --- !u!1 &298217070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2707,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 181477501}
+  m_Father: {fileID: 1958576545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2767,7 +2844,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1155994813}
-  - {fileID: 156492361}
   - {fileID: 1837525437}
   - {fileID: 1712200828}
   - {fileID: 1844151508}
@@ -2880,8 +2956,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 318027244}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &318027249
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3013,8 +3092,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 321237479}
   EnableInHand: {fileID: 469643466}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &321237484
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3491,8 +3573,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 363581443}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &363581448
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4434,8 +4519,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 484528766}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &484528771
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5079,8 +5167,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 564453278}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &564453283
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5811,8 +5902,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 614391769}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &614391774
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5944,8 +6038,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 627705609}
   EnableInHand: {fileID: 469643466}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &627705614
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6478,8 +6575,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 661981436}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &661981441
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6732,8 +6832,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 0}
   BookCheck: {fileID: 0}
+  DepositCheck: {fileID: 0}
   ShelfObj: {fileID: 0}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 0}
+  Drink: {fileID: 0}
 --- !u!64 &689580544
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7837,8 +7940,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 844898853}
   EnableInHand: {fileID: 1471162346}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &844898856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8026,8 +8132,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 851563925}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &851563930
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8157,8 +8266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 859496523}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &859496528
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8288,8 +8400,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 896761772}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &896761777
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8646,7 +8761,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 181477501}
+  m_Father: {fileID: 1958576545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -9231,8 +9346,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1024175014}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1024175019
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9449,8 +9567,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1034641200}
   EnableInHand: {fileID: 1743590050}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!23 &1034641204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9739,8 +9860,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1080227491}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1080227496
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10301,9 +10425,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerEndScreen
   AnimComplete: 0
   ObjDepo: {fileID: 1844151509}
-  AnimEnd: {fileID: 0}
+  AnimEnd: {fileID: 1263702763}
   CorObj: {fileID: 1844151511}
   Bottle: {fileID: 979356007}
+  SoftLock: {fileID: 290255336}
 --- !u!1 &1171040416
 GameObject:
   m_ObjectHideFlags: 0
@@ -10352,6 +10477,7 @@ GameObject:
   - component: {fileID: 1181535933}
   - component: {fileID: 1181535932}
   - component: {fileID: 1181535934}
+  - component: {fileID: 1181535935}
   m_Layer: 0
   m_Name: Box002
   m_TagString: Untagged
@@ -10446,8 +10572,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 923287418}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
+--- !u!64 &1181535935
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181535930}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2232952877369940510, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
 --- !u!1 &1183260915
 GameObject:
   m_ObjectHideFlags: 0
@@ -10557,8 +10708,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1183260915}
   EnableInHand: {fileID: 479062912}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1183260920
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10652,8 +10806,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1189024450}
   EnableInHand: {fileID: 1743590050}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!23 &1189024454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10910,8 +11067,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1201255800}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1201255805
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10934,6 +11094,143 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -868234959597310635, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1 &1207115811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207115812}
+  - component: {fileID: 1207115814}
+  - component: {fileID: 1207115813}
+  m_Layer: 5
+  m_Name: Drink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1207115812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207115811}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 181477501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -900.5272, y: 429.3}
+  m_SizeDelta: {x: 740.53, y: 53.599}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1207115813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207115811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Press E to Drink
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1207115814
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207115811}
+  m_CullTransparentMesh: 1
 --- !u!1 &1209269722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11206,13 +11503,13 @@ Transform:
   m_LocalScale: {x: 0.29147762, y: 0.29147762, z: 0.29147762}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 979356008}
-  - {fileID: 1743590053}
-  - {fileID: 1471162347}
   - {fileID: 1548873179}
+  - {fileID: 979356008}
   - {fileID: 479062913}
-  - {fileID: 469643467}
   - {fileID: 131970405}
+  - {fileID: 469643467}
+  - {fileID: 1471162347}
+  - {fileID: 1743590053}
   m_Father: {fileID: 1377497323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1263702760
@@ -11681,8 +11978,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1337194821}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1337194826
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11814,8 +12114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1343681482}
   EnableInHand: {fileID: 479062912}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1343681487
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12189,8 +12492,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1361272979}
   EnableInHand: {fileID: 479062912}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1361272984
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12355,8 +12661,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1366593719}
   EnableInHand: {fileID: 469643466}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1366593724
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17695,8 +18004,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1380751452}
   EnableInHand: {fileID: 479062912}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1380751457
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18651,8 +18963,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 0}
   BookCheck: {fileID: 0}
+  DepositCheck: {fileID: 0}
   ShelfObj: {fileID: 1462653367}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 0}
+  Drink: {fileID: 0}
 --- !u!64 &1462653370
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19037,8 +19352,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1507274863}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1507274868
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19962,8 +20280,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1586843623}
   EnableInHand: {fileID: 469643466}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1586843628
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20501,8 +20822,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1364800454}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1655862518
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20629,8 +20953,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1678101747}
   EnableInHand: {fileID: 1471162346}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!23 &1678101751
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21293,8 +21620,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1722660166}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1722660171
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21809,8 +22139,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1770048672}
   EnableInHand: {fileID: 469643466}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1770048677
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22233,8 +22566,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1821769689}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1821769694
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22753,6 +23089,7 @@ MonoBehaviour:
   AnimEnd: {fileID: 0}
   CorObj: {fileID: 1844151511}
   Bottle: {fileID: 0}
+  SoftLock: {fileID: 0}
 --- !u!1 &1885224256
 GameObject:
   m_ObjectHideFlags: 0
@@ -23011,8 +23348,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1891621056}
   EnableInHand: {fileID: 479062912}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1891621062
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23306,8 +23646,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1935861697}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1935861702
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23330,6 +23673,44 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8034885124796669539, guid: b1f1a1be992500d4cb3cc878e9d734a8, type: 3}
+--- !u!1 &1958576544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958576545}
+  m_Layer: 5
+  m_Name: MainDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1958576545
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958576544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 306964738}
+  - {fileID: 945857004}
+  - {fileID: 210947786}
+  m_Father: {fileID: 181477501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1961656170
 GameObject:
   m_ObjectHideFlags: 0
@@ -23696,8 +24077,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 689580541}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!1 &1989451331
 GameObject:
   m_ObjectHideFlags: 0
@@ -23942,8 +24326,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1994073580}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &1994073585
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23981,7 +24368,7 @@ GameObject:
   - component: {fileID: 2006980345}
   m_Layer: 0
   m_Name: Cylinder014
-  m_TagString: Untagged
+  m_TagString: SecretEndingBottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24074,8 +24461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 2006980340}
   EnableInHand: {fileID: 979356007}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &2006980345
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25105,8 +25495,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClicktoDest_EnableObj
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 2111289844}
   EnableInHand: {fileID: 1548873178}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &2111289849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25236,8 +25629,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1462653367}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!64 &2124475501
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25389,8 +25785,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjInHand
   InHandCheck: {fileID: 1837525440}
   BookCheck: {fileID: 1837525440}
+  DepositCheck: {fileID: 1844151509}
   ShelfObj: {fileID: 1582418228}
   EnableInHand: {fileID: 131970404}
+  MainDialog: {fileID: 1958576544}
+  Drink: {fileID: 1207115811}
 --- !u!1 &2138313295
 GameObject:
   m_ObjectHideFlags: 0
@@ -25440,6 +25839,7 @@ SceneRoots:
   - {fileID: 1923207471}
   - {fileID: 1171040417}
   - {fileID: 1260893881}
+  - {fileID: 1907667351}
   - {fileID: 557739853}
   - {fileID: 260760531}
   - {fileID: 1431553251}
@@ -25448,4 +25848,4 @@ SceneRoots:
   - {fileID: 1425405939}
   - {fileID: 174507576}
   - {fileID: 298217073}
-  - {fileID: 1907667351}
+  - {fileID: 290255334}
