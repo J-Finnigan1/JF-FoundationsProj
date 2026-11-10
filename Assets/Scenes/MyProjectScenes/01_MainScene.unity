@@ -2543,6 +2543,8 @@ MonoBehaviour:
   Sphere_Hand: {fileID: 469643466}
   Rice_Hand: {fileID: 1471162346}
   Green_Hand: {fileID: 1743590050}
+  Drink: {fileID: 1207115811}
+  MainDialog: {fileID: 1958576544}
   Softlock: 0
 --- !u!65 &290255340
 BoxCollider:

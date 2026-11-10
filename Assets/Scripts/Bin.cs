@@ -11,6 +11,9 @@ public class Bin : MonoBehaviour
     public GameObject Rice_Hand;    
     public GameObject Green_Hand;
 
+    public GameObject Drink;
+    public GameObject MainDialog;
+
     public int Softlock = 0;
 
     // Update is called once per frame
@@ -59,6 +62,8 @@ public class Bin : MonoBehaviour
                 Bottle_Hand.SetActive(false);
                 boolCheck.isInHand = false;
                 Softlock = Softlock + 1;
+                Drink.SetActive(false);
+                MainDialog.SetActive(true);
             }
             
             Debug.Log("Softlock Counter: " + Softlock);
