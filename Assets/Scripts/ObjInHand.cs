@@ -22,7 +22,7 @@ public class ObjInHand : MonoBehaviour
         if (InHandCheck.isInHand == false && BookCheck.isBookActive == true && DepositCheck.ObjDeposited < 5)
         {
             
-            if (EnableInHand.activeInHierarchy == false && ShelfObj.tag != "Book" )
+            if (EnableInHand.activeInHierarchy == false && ShelfObj.tag != "Book" && ShelfObj.tag != "SecretEndingBottle" )
             { 
                 Debug.Log("object was clicked");
 
@@ -57,12 +57,14 @@ public class ObjInHand : MonoBehaviour
         if (ShelfObj.tag == "SecretEndingBottle" && InHandCheck.isInHand == false)
         {
             Debug.Log("Picked up Bottle"); 
+            Drink.SetActive(true);
+            MainDialog.SetActive(false);
+
             ShelfObj.SetActive(false);
             EnableInHand.SetActive(true);
             InHandCheck.isInHand = true; 
 
-            Drink.SetActive(true);
-            MainDialog.SetActive(false);
+            
         }
     }
 }
