@@ -18,7 +18,6 @@ public class MovementScriptV3 : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
         _movement = (forward * Input.GetAxis("Vertical") + right * Input.GetAxis("Horizontal"));
-
     }
 
     void FixedUpdate()

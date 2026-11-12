@@ -11841,12 +11841,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This fuckass witch kidnapped me at the bar because I rambled about my
-    hatred of Beetroot.
+  m_text: 'This witch kidnapped me because I hate Beetroot.
 
 
-    Now she''s forcing me to help her make a potion that
-    "totally wont end the world" (blatant lie).'
+    Now she''s forcing
+    me to help her make a potion that "totally wont end the world" '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -25037,7 +25036,11 @@ MonoBehaviour:
     3. Complete the potion
 
     (once all items
-    have been added, click on the cauldron a final time)'
+    have been added, click on the cauldron a final time)
+
+
+    WASD - Move    Mouse
+    - look around    ESC - pause'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
